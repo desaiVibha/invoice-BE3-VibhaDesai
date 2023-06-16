@@ -1,0 +1,57 @@
+{
+      "data": [
+            {
+                  "invoice_no": 1,
+                  "client_name": "Vibha",
+                  "date": "Thr 08 June 2023",
+                  "total_amount": 4,
+                  "item": [
+                        {
+                              "desc": "Rayaru",
+                              "rate": 400,
+                              "quantity": 2
+                        },
+                        {
+                              "desc": "Raghavendra Swamy",
+                              "rate": 400,
+                              "quantity": 2
+                        },
+                        {
+                              "desc": "Rayaru",
+                              "rate": "1000",
+                              "quantity": "1"
+                        },
+                        {
+                              "desc": "Srikanth",
+                              "rate": "5000",
+                              "quantity": "2"
+                        }
+                  ]
+            },
+            {
+                  "invoice_no": 6,
+                  "client_name": "Rayaru",
+                  "date": "Thr 08 June 2023",
+                  "total_amount": 0.0,
+                  "item": [
+                        {
+                              "desc": "Shri Rayaru",
+                              "rate": 500,
+                              "quantity": 9
+                        }
+                  ]
+            },
+            {
+                  "invoice_no": 3,
+                  "client_name": "Shrikanth",
+                  "date": "Thr 08 June 2023",
+                  "total_amount": 0.0
+            },
+            {
+                  "invoice_no": 4,
+                  "client_name": "Shrivibhu",
+                  "date": "Thr 08 June 2023",
+                  "total_amount": 0.0
+            }
+      ]
+}
