@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'invoice_app',
     'corsheaders',
+    'rest_framework',
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
@@ -78,9 +80,12 @@ WSGI_APPLICATION = 'invoice_back_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }   
+        'ENGINE': 'djongo',
+        'NAME': 'invoiceDatabase',
+        'HOST': '127.0.0.1',
+        'PORT': '27017',
+        'AUTH_SOURCE':'admin'
+    }
 }
 
 
@@ -129,3 +134,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST=[
     'http://localhost:3000'
 ]
+
+AUTH_USER_MODEL = 'invoice_app.User'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+        'rest_framework_simplejwt.authentication.JWTAuthentication'
+    ]
+}
